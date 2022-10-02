@@ -1,38 +1,54 @@
+body,
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.guess {
+	width: 500px;
+	height: 300px;
+	margin: 20px;
+  border-radius: 20px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttonDiv {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button {
+  background-color: #C0CAAD;
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-link {
-  color: #61dafb;
+.tryAgain .takeAGuess {
+	margin: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tryAgain {
+	color: red;
+  font-size: 25px;
+}
+
+.takeAGuess {
+	color: green;
+  font-size: 25px;
 }
